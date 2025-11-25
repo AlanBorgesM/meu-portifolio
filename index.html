@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfólio – Alan Borges</title>
+<style>
+ body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; }
+ header { background: #4b79ff; color: white; padding: 30px; text-align: center; }
+ section { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-top: 30px; }
+ h2 { color: #4b79ff; }
+ code { background: #eee; padding: 4px; border-radius: 4px; display: block; white-space: pre-wrap; }
+ .btn { display: inline-block; padding: 10px 20px; background: #4b79ff; color: white; text-decoration: none; border-radius: 8px; margin-top: 10px; }
+ footer { text-align: center; padding: 20px; color: #555; margin-top: 40px; }
+</style>
+</head>
+<body>
+<header>
+ <h1>Portfólio Acadêmico – Alan Borges</h1>
+ <p>Projeto final da disciplina de Algoritmos e Programação</p>
+</header>
+
+<section>
+ <h2>📌 Sobre o Projeto</h2>
+ <p>Este portfólio reúne todos os conteúdos estudados durante o semestre, incluindo:</p>
+ <ul>
+  <li>Decisão e Repetição</li>
+  <li>Vetores e Matrizes</li>
+  <li>Funções e Bibliotecas</li>
+  <li>Registros</li>
+  <li>Arquivos em Disco</li>
+  <li>Recursividade</li>
+  <li>Análise de Complexidade (Big O)</li>
+  <li>Uso de APIs externas</li>
+ </ul>
+ <p>Também inclui todos os projetos feitos em aula:</p>
+ <ul>
+  <li>Consulta de endereço via CEP</li>
+  <li>Cotação do dólar</li>
+  <li>Monitoramento da frota de ônibus</li>
+  <li>Bot no Telegram</li>
+ </ul>
+ <a class="btn" href="portfolio_alan_complete.zip">Baixar o Projeto Completo</a>
+</section>
+
+<section>
+ <h2>🧠 Estrutura e Explicação</h2>
+ <p>A seguir estão descritas as principais partes do projeto, incluindo explicações e trechos de código.</p>
+
+ <h3>1. Estruturas de Decisão e Repetição</h3>
+ <code>
+# Exemplo
+for i in range(10):
+    if i % 2 == 0:
+        print(i, "é par")
+ </code>
+
+ <h3>2. Vetores e Matrizes</h3>
+ <code>
+matriz = [[1,2,3], [4,5,6]]
+for linha in matriz:
+    print(linha)
+ </code>
+
+ <h3>3. Funções e Bibliotecas</h3>
+ <code>
+import math
+
+def area_circulo(r):
+    return math.pi * r**2
+ </code>
+
+ <h3>4. Registros (Classes)</h3>
+ <code>
+class Pessoa:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+ </code>
+
+ <h3>5. Arquivos em Disco</h3>
+ <code>
+with open("dados.txt", "w") as f:
+    f.write("Arquivo gerado com sucesso!")
+ </code>
+
+ <h3>6. Recursividade</h3>
+ <code>
+def fatorial(n):
+    if n == 0:
+        return 1
+    return n * fatorial(n-1)
+ </code>
+
+ <h3>7. Complexidade Big O</h3>
+ <p>O algoritmo acima possui complexidade <strong>O(n)</strong> devido à profundidade da recursão.</p>
+
+ <h3>8. Consumo de APIs Externas</h3>
+ <code>
+import requests
+
+cep = "01001000"
+url = f"https://viacep.com.br/ws/{cep}/json/"
+res = requests.get(url)
+print(res.json())
+ </code>
+</section>
+
+<section>
+ <h2>🌐 Projetos Implementados</h2>
+ <ul>
+  <li>Consulta por CEP</li>
+  <li>Cotação do dólar</li>
+  <li>Monitoramento da frota</li>
+  <li>Bot do Telegram</li>
+ </ul>
+ <p>Todos os códigos estão dentro do arquivo ZIP acima.</p>
+</section>
+
+<footer>
+ <p>Desenvolvido por Alan Borges — 2025</p>
+</footer>
+
+</body>
+</html>
